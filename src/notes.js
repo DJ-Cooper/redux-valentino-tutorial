@@ -33,4 +33,13 @@
  *
  * Next, make the reducer check incoming action types.
  *
+ * react-redux: connect method
+ *
+ * connect(mapStateToProps, mapDispatchToProps)
+ *
+ * mapStateToProps connects part of Redux state to component props
+ *
+ * mapDispatchToProps connects Redux actions to component props
+ *
+ * React also needs Provider, a higher order react-redux component.
  */
