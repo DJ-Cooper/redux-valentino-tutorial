@@ -1,12 +1,5 @@
-import React from 'react'
-import { render } from 'react-dom'
-import { Provider } from 'react-redux'
-import store from './store/index'
-import App from './js/components/App'
+import store from '../js/store/index'
+import { addArticle } from '../js/actions/index'
 
-render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
-)
+window.store = store
+window.addArticle = addArticle

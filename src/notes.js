@@ -4,9 +4,10 @@
  * This signal is an action that is "dispatched"
  *
  * Tutorial progress marker:
- * "keeping the original array:"
+ * "Form component and Redux actions"
  *
  * Redux actions are just JS objects. type/payload
+ *      payload is the new values
  *
  * Type property drives how the state should change and it's
  * always required by Redux.
@@ -42,4 +43,10 @@
  * mapDispatchToProps connects Redux actions to component props
  *
  * React also needs Provider, a higher order react-redux component.
+ *
+ * getState: access current state
+ * dispatch: send action to update state
+ * subscribe: listen for state changes
+ *
+ * <Provider store={store}> <<< from react-redux
  */
