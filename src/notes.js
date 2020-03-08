@@ -4,7 +4,7 @@
  * This signal is an action that is "dispatched"
  *
  * Tutorial progress marker:
- * "Form component and Redux actions"
+ * "What is Redux middleware?"
  *
  * Redux actions are just JS objects. type/payload
  *      payload is the new values
@@ -49,4 +49,13 @@
  * subscribe: listen for state changes
  *
  * <Provider store={store}> <<< from react-redux
+ *
+ * Form component: local state for inputs
+ * It receives a Redux action. This way it can
+ * update global state by dispatching AddArticle.
+ *
+ * mapDispatchToProps connects Redux actions to React props
+ *
+ * The first argument for connect must be null when mapStateToProps
+ * is absent, or you'll get a TypeError: dispatch is not a function.
  */
