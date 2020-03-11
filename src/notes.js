@@ -4,7 +4,7 @@
  * This signal is an action that is "dispatched"
  *
  * Tutorial progress marker:
- * "What is Redux middleware?"
+ * "Asynchronous actions in Redux, the naive way"
  *
  * Redux actions are just JS objects. type/payload
  *      payload is the new values
@@ -58,4 +58,8 @@
  *
  * The first argument for connect must be null when mapStateToProps
  * is absent, or you'll get a TypeError: dispatch is not a function.
+ *
+ * Middlewares in Redux will hold the bulk of your application's logic
+ *
+ * You should always return next(action) in middleware
  */
